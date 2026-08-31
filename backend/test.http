@@ -1,0 +1,31 @@
+### CREATE TICKET
+
+POST http://localhost:5000/api/tickets
+Content-Type: application/json
+
+{
+    "title": "Laptop not working",
+    "description": "Employee laptop is not turning on",
+    "category": "Hardware",
+    "priority": "High"
+}
+
+
+### GET ALL TICKETS
+
+GET http://localhost:5000/api/tickets
+
+
+### UPDATE TICKET
+
+PUT http://localhost:5000/api/tickets/6a9071344ccfe2977b0e3518
+Content-Type: application/json
+
+{
+    "priority": "Critical",
+    "status": "In Progress"
+}
+
+### DELETE TICKET
+
+DELETE http://localhost:5000/api/tickets/6a9071344ccfe2977b0e3518
